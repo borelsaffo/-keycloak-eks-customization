@@ -46,15 +46,16 @@ COPY themes /opt/keycloak/themes
 # Build pour activer extensions et thème
 RUN /opt/keycloak/bin/kc.sh build
 
-#
+'''
+#  Construction et publication de l'image
 # Build de l'image
 docker build -t <your-repo>/keycloak-custom:latest .
 
 # Push vers Docker Hub ou ECR
 docker push <your-repo>/keycloak-custom:latest
+'''
 
-
-🚀 Déploiement sur EKS
+# 🚀 Déploiement sur EKS
 A. Via manifest Deployment.yaml
 yaml
 Copier
@@ -67,6 +68,8 @@ bash
 Copier
 Modifier
 kubectl apply -f keycloak-deployment.yaml
+
+# g
 B. Via Helm
 Dans values.yaml (Bitnami ou chart officiel) :
 
@@ -82,7 +85,9 @@ bash
 Copier
 Modifier
 helm upgrade keycloak oci://registry-1.docker.io/bitnamicharts/keycloak -f values.yaml
-🎨 Personnalisation de la page d’accueil
+
+## Personnalisation de la page d’accueil
+
 Crée un dossier themes/my-theme/
 
 Place tes fichiers dans :
