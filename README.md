@@ -133,6 +133,12 @@ Accéder à l'URL de login : https://keycloak.example.com/auth/realms/myrealm/ac
 
 Vérifier que l’interface a bien changé.
 
+
+
+# liens
+https://github.com/mabartos/keycloak-adaptive-authn/releases/tag/0.3.2
+https://github.com/netzbegruenung/keycloak-mfa-plugins/releases/tag/v26.1.6
+
 ✅ Résumé
 Étape	Action
 Ajouter des .jar	Mettre dans /providers + kc.sh build
