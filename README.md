@@ -136,6 +136,8 @@ Vérifier que l’interface a bien changé.
 
 
 # liens
+https://www.keycloak.org/extensions?utm_source=chatgpt.com
+
 https://github.com/mabartos/keycloak-adaptive-authn/releases/tag/0.3.2
 https://github.com/netzbegruenung/keycloak-mfa-plugins/releases/tag/v26.1.6
 
